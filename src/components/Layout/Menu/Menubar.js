@@ -56,6 +56,7 @@ const Menubar = () => {
               >
                 {MenuData?.map((menu, i) => (
                   <Link
+                    key={i}
                     className={DmSans.className + " " + "mx-3"}
                     href={menu.url}
                   >
