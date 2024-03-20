@@ -32,7 +32,7 @@ const Newsletter = () => {
                 <Form.Control type="email" placeholder="Email" />
               </div>
               <div className="arrow">
-                <Image width={24} height={24} src={RightArrow} />
+                <Image alt="news-img" width={24} height={24} src={RightArrow} />
               </div>
             </div>
           </div>
