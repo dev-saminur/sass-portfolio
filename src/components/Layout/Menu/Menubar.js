@@ -25,13 +25,13 @@ const Menubar = () => {
   // };
   // window.addEventListener("scroll", handleScroll);
   const handleScroll = () => {
-    if (window.scrollY > 100) {
+    if (window?.scrollY > 100) {
       setShowNav(true);
     } else {
       setShowNav(false);
     }
   };
-  window.addEventListener("scroll", handleScroll);
+  window?.addEventListener("scroll", handleScroll);
 
   return (
     <>
