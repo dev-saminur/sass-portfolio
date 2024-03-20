@@ -44,7 +44,7 @@ const Footer = () => {
 
               <div className="service-list">
                 {ServiceList?.map((list, i) => (
-                  <Link className={DmSans.className} href={list.url}>
+                  <Link key={i} className={DmSans.className} href={list.url}>
                     {list.link}
                   </Link>
                 ))}
