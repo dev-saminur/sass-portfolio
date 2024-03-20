@@ -75,7 +75,7 @@ const Blogs = () => {
                 <Image alt="images" src={item.image} width={400} height={400} />
               </div>
               <div className="d-flex  date">
-                <Image src={item.dateSvg} width={30} height={30} />
+                <Image alt="img" src={item.dateSvg} width={30} height={30} />
                 <p className={DmSans.className}>{item.date}</p>
               </div>
               <h4 className={DmSans.className}>{item.title}</h4>
