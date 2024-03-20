@@ -72,7 +72,7 @@ const Blogs = () => {
           <div className="box-item" key={i}>
             <div className="slider row-gap-5">
               <div className="slider-image">
-                <Image src={item.image} width={400} height={400} />
+                <Image alt="images" src={item.image} width={400} height={400} />
               </div>
               <div className="d-flex  date">
                 <Image src={item.dateSvg} width={30} height={30} />
