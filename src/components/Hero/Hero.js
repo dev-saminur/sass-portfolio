@@ -22,10 +22,7 @@ const OpenSans = Open_Sans({
 const Hero = () => {
   return (
     <>
-      <div
-       
-        className="hero-section"
-      >
+      <div className="hero-section">
         <Container>
           <Row className="align-items-center">
             <Col lg={6} xl={6} xs={12}>
@@ -99,7 +96,13 @@ const Hero = () => {
             </Col>
             <Col lg={6} xl={6} xs={12} className="text-end">
               <div className="hero-img">
-                <Image src={HeroImg} width={400} height={400} loading="lazy" />
+                <Image
+                  alt="hero-img"
+                  src={HeroImg}
+                  width={400}
+                  height={400}
+                  loading="lazy"
+                />
               </div>
             </Col>
           </Row>
