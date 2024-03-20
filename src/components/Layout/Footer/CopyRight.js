@@ -17,7 +17,7 @@ const CopyRight = () => {
             <Col lg={8} xs={12} className="mx-auto">
               <div className="copy-right-list d-flex align-items-center justify-content-center lg-gap-4 gap-3">
                 {CopyRightData.map((item, i) => (
-                  <Link href={item.url} className={OpenSans.className}>
+                  <Link key={i} href={item.url} className={OpenSans.className}>
                     {item.link}
                   </Link>
                 ))}
