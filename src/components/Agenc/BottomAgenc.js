@@ -30,7 +30,13 @@ const BottomAgenc = () => {
         <div className="col-lg-6 col-12">
           <div className="bottom-left">
             <div className="image">
-              <Image width={400} height={400} loading="lazy" src={AgencImg} />
+              <Image
+                alt="bottom-img"
+                width={400}
+                height={400}
+                loading="lazy"
+                src={AgencImg}
+              />
             </div>
             <div className="shape">
               <div className="shape-text">
@@ -60,7 +66,7 @@ const BottomAgenc = () => {
           <div className="bottom-right">
             <div className="header">
               <h2 className={DmSans.className}>
-                I <span>Run</span> Agency <span>Smartly</span> With My
+                I <span>Run</span> Agency <span>Smartly</span>With My
                 <span>Team</span> Member.
               </h2>
               <p className={DmSans.className}>
@@ -70,7 +76,7 @@ const BottomAgenc = () => {
               </p>
             </div>
             {AgencData.map((item, i) => (
-              <li>
+              <li key={i}>
                 <AiOutlineCheck /> {item.text}
               </li>
             ))}

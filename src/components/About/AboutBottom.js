@@ -23,6 +23,7 @@ const AboutBottom = () => {
             <div className="row row-gap-4">
               {AboutItemData.map((item, i) => (
                 <div
+                  key={i}
                   className="col-lg-6 col-md-6"
                   onClick={() => handleActive(i)}
                 >
