@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -16,22 +16,21 @@ const DmSans = DM_Sans({
 const Menubar = () => {
   const [showNav, setShowNav] = useState(false);
   const [show, setShow] = useState(false);
-  // const handleScroll = () => {
-  //   if (window.scrollY > 100) {
-  //     setShowNav(true);
-  //   } else {
-  //     setShowNav(false);
-  //   }
-  // };
-  // window.addEventListener("scroll", handleScroll);
+
   const handleScroll = () => {
-    if (window?.scrollY > 100) {
+    if (window.scrollY > 100) {
       setShowNav(true);
     } else {
       setShowNav(false);
     }
   };
-  window?.addEventListener("scroll", handleScroll);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
